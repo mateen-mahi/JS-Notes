@@ -1,0 +1,164 @@
+Ecma Script  (European Computer manufacturer Association) 
+
+Ecma Script is client side script which is standard for other client side scripts
+
+Net Skip 1995 ----> Mocha  --> LiveScript -----> Javascript
+J Script ---> Microsoft Internet Explorer
+ES1 --- 1997
+ES2 --- 1998
+ES3 --- 1999
+ES4 --- Never
+ES5 --- 2005
+ES6 --- 2015 Major Update in history 
+
+
+data Types 
+
+(1) String (2) numbers (3) Boolean (4) null (5) Undefined (6) Symbol (7) Bigint
+
+toUppercase(),toLowercase(),number(),string(),push(),pop(),shift(),unshift(),splice(),slice(), indexOf() typeof,prompt(),sort() , reverse() ,flat(),map , filter , at()reduce , find
+
+
+charAt() , charCodeAt() , replace() , split() ,join() startWith() , endsWith() , trim() JSON.Stringify 
+shallow and deep copy in array, from array.from(nameofarrythat we want to copy) , array.concat() ,
+Array Like Objects 
+Array.isArray(array) ,[...arrayDestructuring, 1,2,3] , Object Destructuring , parameter Destructuring
+
+object.assign({},object'sName), freeze , seal , isfrozen ,keys , values , entries , object.is(obj1 , obj2 ) to check two object equality 
+
+eval
+JSON.stringify(objName) convert object to string 
+
+JSON.parse(objName) convert string to obj
+
+localStorage.setItem("key" , "Value") ,getItem , removeItem , clear()
+
+
+if else , ternary operators , Switch Statements , 
+while loop , Do while ,for , for of , for in , forEach
+
+we can't use foreach loop directly on html array like objects
+function Expression , function declaration , arrow functions ,default perimeter 
+callback functions
+,all,some , set
+use of " ? "
+Hoisting 
+Lexical Scope 
+function and block scope 
+Function inside object are methods 
+try catch block
+
+Asynchronous Javascript
+Javascript is synchronous and single thread  but with the help of async await (browser events) we can use it asynchronously 
+settimeout() , setinterval , nested interval ,  async await , promise , .then , .cath 
+
+
+
+
+
+OOPS In Javascript
+This  keyword refers current Obj
+call , apply , bind are different ways of calling a function but it does not work in arrow funcions 
+Every function has space like object to store data that is called prototype 
+__proto__ and [[prototype]] are same thing, reference of an Obj
+const obj1 =  Object.create(obj2)this will set proto of obj1 as obj2
+
+"New" keyword set the value of {} as this keyword and return it 
+Classes are fake in ES6 coz Internally it works like functional approach
+Supper() is used to inherit properties from base/parent class  
+Instance and Objects are same thing 
+class Student extends parent{}
+static methods and static properties
+
+function.hasOwnProperty() will give us all values except prototype
+
+
+class Parent{
+    constructor(name){
+this.name = name;
+    }
+
+}
+
+class Child extends Parent{
+    
+    constructor(name,age){
+        super(name)
+this.age = age
+    }
+getSummary(){console.log(`${this.name} is ${this.age} years old`)}
+
+
+}
+
+
+const res = new Child("Mateen" , 23)
+res.getSummary()
+
+
+
+
+
+
+How Javascript works
+
+In first step Compile Code to check early errors and DAS(determine appropriate scope)
+in 2nd step JS Create global Execution Context
+
+Global Execution Context Also have two phases 
+(1)Creation Phase 
+window
+this keyword as window object
+function as it is 
+var variable as Undefined
+let and const as un initialized
+
+
+(2)Execution Phase
+window 
+this : window 
+Undefined
+function 
+assign values  to variables
+
+Note that Function also create Local memory Context
+
+
+DOM (document object Model ) 
+
+Root Node ,Root Elements 
+clone nodes,appendChild , removeChild , replaceChild, insertBefore append , prepend ,remove 
+innerHTML , innerText , textContent 
+e.target
+Event Bubbling 
+How  to get dimensions of an elements 
+selecting elements like body, head , tittle , meta , classes , id and others
+forEach can't be directly applied to getElementsbyClassname coz it's not an array 
+Event Listeners 
+class list ---->   add,contains,remove,toggle
+get and set attributes 
+styling elements 
+CRUD operations with fetch and axios 
+how to work with audio and video 
+date and time 
+remove event listner
+document.location
+document.title
+append,createElement,remove(),before,after
+live list and static List (queryselecter vs others)
+document.domain
+getBoundingClientRect()  
+consol.dir()
+set and map
+
+
+
+Best practices 
+
+(1) avoid global variables and create maximum variables in functions 
+(2) initialize variables
+(3) Declaration Should be on Top
+(4) use default perimeter
+(5) reduce activity in loops 
+(6) Avoid Unnecessary variables
+
